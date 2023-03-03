@@ -1,1 +1,1 @@
-web: python mainraw.py
+web: python3.7 mainraw.py
