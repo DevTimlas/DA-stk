@@ -1,8 +1,8 @@
+Cython
 bs4
 lxml
 emoji==1.6.3
 text2emotion
-cython
 scikit-learn
 yahoo_historical==0.4.1
 pygad==2.8.0
