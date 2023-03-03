@@ -1,5 +1,6 @@
-name: python
-runtime: 3.7.10
+runtime:
+  name: python
+  version: 3.7
 env:
   PYTHONUNBUFFERED: "1"
   PORT: "8080"
