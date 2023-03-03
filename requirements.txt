@@ -3,7 +3,7 @@ bs4
 lxml
 emoji==1.6.3
 text2emotion
-https://files.pythonhosted.org/packages/80/53/47bed2190d2d86914223454f69744553521bc20c7de922d6a3b5300316ab/scikit_learn-1.2.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+scikit-learn
 yahoo_historical==0.4.1
 pygad==2.8.0
 numpy
