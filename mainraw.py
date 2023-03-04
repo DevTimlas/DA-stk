@@ -170,11 +170,11 @@ def test():
 	fw.write("=== Date: "+str(datetime.now())+" ===\n")
 	fw.write("=== Processed with genetic algorithm models "+filename+" and "+filename2+" ===\n")
 	fw.flush()
-	print(bcolors.OKGREEN+"\n\n=== gen2 started :) ==="+bcolors.ENDC)
-	print(bcolors.OKCYAN+"=== Date: "+str(datetime.now())+" ==="+bcolors.ENDC)
+	print("\n\n=== gen2 started :) ===")
+	print("=== Date: "+str(datetime.now())+" ===")
 	#print(bcolors.WARNING+"** heyy, isn't it a little late to check for stocks?!"+bcolors.ENDC)
-	print(bcolors.OKCYAN+"=== Processed with models "+filename+" and "+filename2+" ==="+bcolors.ENDC)
-	print(bcolors.OKCYAN+"=== neural nets trained using genetic algorithm ==="+bcolors.ENDC)
+	print("=== Processed with models "+filename+" and "+filename2+" ===")
+	print("=== neural nets trained using genetic algorithm ===")
 
 	cnt=0
 	random.shuffle(symbols)
