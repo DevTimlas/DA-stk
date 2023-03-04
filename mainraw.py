@@ -273,7 +273,9 @@ async def sse(request):
            	yield {'event': f'{a}', 'data': f'{b}'}
            	await asyncio.sleep(1)
 
-    return EventSourceResponse(event_generator())
+    ev = EventSourceResponse(event_generator())
+    ev.ping_interval = 1800
+    return ev
 
 	
 if __name__ == "__main__":
