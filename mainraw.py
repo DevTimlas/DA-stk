@@ -213,6 +213,33 @@ def test():
 	fw.close()
 	#send_results()
 	
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse, StreamingResponse
+import time
+import uvicorn
+import os
+
+app = FastAPI()
+
+@app.get("/")
+async def read_root():
+    return {"Hello": "World"}
+
+@app.get("/stream")
+async def stream_data():
+    async def generate():
+        for a,b in test():
+            yield f"{a}: {b}\n\n"
+            time.sleep(1)
+    return StreamingResponse(generate(), media_type="text/event-stream")
+
+if __name__ == '__main__':
+	uvicorn.run("mainraw:app", host="0.0.0.0", port=os.getenv("PORT", default=3000), log_level="info")
+
+	
+	
+
+"""	
 from flask import Flask
 import asyncio
 import uvicorn
@@ -255,4 +282,4 @@ if __name__ == "__main__":
 	
 	
 	# print(dc)
-# print("Check file \"last-results.txt\", list of stocks to buy for the short term!")
+# print("Check file \"last-results.txt\", list of stocks to buy for the short term!")"""
