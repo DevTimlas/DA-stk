@@ -8,6 +8,7 @@ import random
 import time
 from datetime import datetime
 import pickle
+import os
 
 ##class bcolors:
 ##    HEADER = '\033[95m'
