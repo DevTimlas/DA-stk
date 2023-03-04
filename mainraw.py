@@ -212,7 +212,7 @@ def test():
 	
 	fw.close()
 	#send_results()
-	
+"""	
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, StreamingResponse
 import time
@@ -282,4 +282,4 @@ if __name__ == "__main__":
 	
 	
 	# print(dc)
-# print("Check file \"last-results.txt\", list of stocks to buy for the short term!")"""
+# print("Check file \"last-results.txt\", list of stocks to buy for the short term!")
