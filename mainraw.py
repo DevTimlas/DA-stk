@@ -274,7 +274,7 @@ async def sse(request):
            	await asyncio.sleep(1)
 
     ev = EventSourceResponse(event_generator())
-    ev.ping_interval = 1800
+    ev.ping_interval = 10000
     return ev
 
 	
