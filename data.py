@@ -40,7 +40,7 @@ def get(symbol,withlabels):
 #			labels=[tanh,1-tanh]
 #		else:
 #			labels=[1+tanh,tanh]
-		if diff(prices)[-1]>0.01:
+		if diff(prices)[-1]>0:
 			labels=[1,0]
 		else:
 			labels=[0,1]
@@ -63,7 +63,7 @@ def get(symbol,withlabels):
 		full=np.array(full)
 		full=full.reshape(20)
 	if withlabels==2:
-		return full,statistics.mean(volume)>450000 #100000
+		return full,statistics.mean(volume)>350000 #100000
 	else:
 		return full
 
