@@ -63,7 +63,7 @@ def get(symbol,withlabels):
 		full=np.array(full)
 		full=full.reshape(20)
 	if withlabels==2:
-		return full,statistics.mean(volume)>350000 #100000
+		return full,statistics.mean(volume)>300000 #100000
 	else:
 		return full
 
